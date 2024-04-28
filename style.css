@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #888;
+    height: 100vh;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(39, 125, 255);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transition: .5s;
+}
+
+/* dark mode */
+.wrapper .title .darkmode{
+    position: absolute;
+    left: 35%;
+    width: 80px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0 10px;
+    color: #000;
+    border: 1px solid #000;
+    transition: .3s;
+}
+
+.wrapper .title .darkmode:hover{
+    background-color: #000;
+    transition: .3s;
+    transform: scale(1.1);
+    color: white;
+}
+/* dark mode done */
+
+.wrapper{
+    width: 35%;
+    height: 85vh;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.wrapper .title {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .input{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.wrapper .input input{
+    height: 40px;
+    margin: 5px;
+    width: 90%;
+    border-radius: 5px;
+    padding: 0 10px 0;
+    border: 1px solid #555;
+}
+
+.wrapper .forgot-password{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wrapper .forgot-password a{
+    color: rgb(0, 102, 255);
+    text-decoration: none;
+}
+
+.wrapper .button-anjay{
+    margin-top: 15px;
+    width: 100%;
+    height: 8%;
+    justify-content: center;
+    text-align: center;
+}
+.wrapper .button-anjay button{
+    width: 90%;
+    height: 100%;
+    background-color: rgb(37, 113, 255);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    transition: .5s;
+}
+
+.wrapper .button-anjay button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: rgb(6, 84, 230);
+    transition: .5s;
+}
+
+.wrapper .button-anjay button:active{
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+.wrapper .no-account{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper .no-account span{
+    color: rgb(0, 102, 255);
+}
+
+.wrapper .or-text{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.wrapper .or-text hr{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 1px;
+    align-items: center;
+    align-self: center;
+}
+
+.wrapper .or-text p{
+    text-align: center;
+    color: #999;
+}
+
+.wrapper .login-with{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper .login-with .fb{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    background-color: rgb(66 103 178);
+    margin-bottom: 30px;
+    align-items: center;
+    align-self: center;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.wrapper .login-with .fb .p{
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+.wrapper .login-with .fb:hover{
+    transition: .5s;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.wrapper .login-with .google img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 25%;
+}
+.wrapper .login-with .google{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    background-color: white;
+    margin-bottom: 30px;
+    align-items: center;
+    align-self: center;
+    padding: 10px;
+    border-radius: 15px;
+    color: #888;
+    font-size: 13px;
+    font-weight: bold;
+    transition: .5s;
+    border: 1px solid #888;
+}
+
+.wrapper .login-with .fb img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 25%;
+}
+
+.wrapper .login-with .google:hover{
+    transition: .5s;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .wrapper{
+        width: 60%;
+    }
+    .wrapper .title .darkmode{
+        position: absolute;
+        left: 23%;
+        width: 10%;
+        height: 45px;
+        border-radius: 20px;
+        padding: 0 10px;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        width: 80%;
+        height: 90vh;
+    }
+    .wrapper .title .darkmode{
+        position: absolute;
+        left: 13%;
+        width: 20%;
+        height: 45px;
+        border-radius: 20px;
+        padding: 0 10px;
+    }
+  }

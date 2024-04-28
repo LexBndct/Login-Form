@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+        <!-- Login Form -->
+
+        <main id="login">
+            <div class="wrapper" id="wrapper">
+                <div class="title" id="title">
+                    <!-- Dark Mode -->
+                    <button class="darkmode" onclick="darkMode()" id="darkmodes">Dark Mode</button>
+                    <!-- Dark Mode Done-->
+                    <h1>Login</h1>
+                </div>
+
+                <div class="input">
+                    <input type="text" placeholder="Username" id="emailbox">
+                    <input type="password" placeholder="Password" id="passwordbox">
+                </div>
+
+                <div class="forgot-password">
+                    <a href=""><p>Forgot Password?</p></a>
+                </div>
+
+                <div class="button-anjay">
+                    <button onclick="loginbtn()" id="login">Login</button>
+                </div>
+
+                <div class="no-account">
+                    <p>Don't have an account? <span><a href="#signup">Sign Up</a></span></p>
+                </div>
+
+                <div class="or-text">
+                    <hr>
+                    <p>Or</p>
+                    <hr>
+                </div>
+
+                <div class="login-with">
+                    <div class="fb">
+                        <img src="Facebook-logo-with-white-circle-PNG.png" alt="">
+                        <p>Login With Facebook</p>
+                    </div>
+
+                    <div class="google">
+                        <img src="googleimage.png" alt="">
+                        <p>Login With Google</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sign Up Form -->
+
+        <main id="login2">
+            <div class="wrapper" id="signup">
+                <div class="title">
+                    <h1>Sign Up</h1>
+                </div>
+
+                <div class="input">
+                    <input type="text" placeholder="Username" id="emailbox2">
+                    <input type="password" placeholder="Password" id="passwordboxSU">
+                    <input type="password" placeholder="Confirm Password" id="passwordboxSU2">
+                </div>
+
+                <div class="button-anjay">
+                    <button onclick="signup()" id="login">Sign Up</button>
+                </div>
+
+                <div class="no-account">
+                    <p>Already have an account? <span><a href="#login">Login</a></span></p>
+                </div>
+
+                <div class="or-text">
+                    <hr>
+                    <p>Or</p>
+                    <hr>
+                </div>
+
+                <div class="login-with">
+                    <div class="fb">
+                        <img src="Facebook-logo-with-white-circle-PNG.png" alt="">
+                        <p>Sign up With Facebook</p>
+                    </div>
+
+                    <div class="google">
+                        <img src="googleimage.png" alt="">
+                        <p>Sign up With Google</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+</body>
+</html>
